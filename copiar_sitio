@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>¿Qué estudia un científico de datos? | ITAM</title>
+</head>
+<body>
+  <header>
+    <div>
+      <p>
+        <a href="tel:5556284028">55 5628 4028</a>
+        <a href="mailto:informes@itam.mx">informes@itam.mx</a>
+      </p>
+    </div>
+    <img src="https://carreras.itam.mx/licenciatura-ciencia-de-datos/wp-content/uploads/sites/6/2024/08/logo-itam.svg" alt="Logo ITAM" width="150">
+<h1>ITAM - Ciencia de Datos</h1>
+    <nav>
+      <ul>
+        <li><a href="https://carreras.itam.mx/licenciatura-ciencia-de-datos/">Inicio</a></li>
+        <li><a href="#"> ¿Qué estudiarás?</a></li>
+        <li><a href="https://carreras.itam.mx/licenciatura-ciencia-de-datos/que-hace-un-cientifico-de-datos/">Tu futuro</a></li>
+        <li><a href="https://carreras.itam.mx/licenciatura-ciencia-de-datos/profesores/">Profesores</a></li>
+        <li><a href="https://carreras.itam.mx/licenciatura-ciencia-de-datos/videos/">Videos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>¿Qué estudia un científico de datos?</h2>
+      <img src="https://carreras.itam.mx/licenciatura-ciencia-de-datos/wp-content/uploads/sites/6/2024/11/proceso-admision-1024x853.webp" alt="Estudiantes conversando en el pasillo del ITAM" width="60%">
+    </section>
+
+    <section>
+      <h2>Perfil del ingreso de Ciencia de Datos</h2>
+      <p><strong>El aspirante a la Licenciatura en Ciencia de Datos debe tener:</strong></p>
+      <ul>
+        <li>Interés por las matemáticas, la estadística y la computación.</li>
+        <li>Habilidad para trabajar en equipo.</li>
+        <li>Deseo de resolver problemas reales y encontrar soluciones prácticas en diversos campos.</li>
+        <li>Capacidad analítica y pensamiento crítico.</li>
+      </ul>
+      <img src="https://carreras.itam.mx/licenciatura-ciencia-de-datos/wp-content/uploads/sites/6/2024/08/logo-ciencia-de-datos.svg" alt="Logo Ciencia de Datos ITAM" width="200">
+    </section>
+
+    <section>
+      <h2>Plan de estudios</h2>
+      <iframe src="https://carreras.itam.mx/licenciatura-ciencia-de-datos/wp-content/plugins/pdfjs-viewer-for-elementor//assets/js/pdfjs/web/viewer.html?file=https://carreras.itam.mx/wp-content/uploads/licenciaturas/plan-de-estudios/plan-de-estudios-licenciatura-ciencia-de-datos.pdf" width="100%" height="600"></iframe>
+    </section>
+
+    <section>
+      <h2>¿Qué estudia un científico de datos?</h2>
+      <p>
+        Al estudiar Ciencia de Datos en el ITAM desarrollarás una serie de habilidades técnicas y analíticas que te permitirán destacar en el manejo y análisis de grandes volúmenes de información. Estas habilidades incluyen:
+      </p>
+
+      <ul>
+        <li><strong>Análisis estadístico avanzado:</strong> herramientas modernas para extraer información valiosa.</li>
+        <li><strong>Modelación predictiva y aprendizaje automático:</strong> algoritmos de inteligencia artificial y machine learning.</li>
+        <li><strong>Programación y manejo de bases de datos:</strong> uso de Python, R, SQL.</li>
+        <li><strong>Visualización de datos:</strong> herramientas como Tableau y Power BI.</li>
+        <li><strong>Toma de decisiones basada en datos:</strong> para aplicación estratégica en organizaciones.</li>
+        <li><strong>Ética en el manejo de datos:</strong> comprensión de los aspectos éticos y legales.</li>
+      </ul>
+
+      
+    </section>
+  </main>
+
+  <footer>
+    <section>
+      <p>
+        La Licenciatura en Ciencia de Datos del ITAM integra estadística, matemáticas y computación para resolver problemas complejos. Su enfoque práctico y estratégico te prepara para tomar decisiones con impacto.
+      </p>
+    </section>
+
+    <section>
+      <h3>MENÚ</h3>
+      <ul>
+        <li><a href="https://carreras.itam.mx/licenciatura-ciencia-de-datos/">Inicio</a></li>
+        <li><a href="#"> ¿Qué estudiarás?</a></li>
+        <li><a href="https://carreras.itam.mx/licenciatura-ciencia-de-datos/que-hace-un-cientifico-de-datos/">Tu futuro</a></li>
+        <li><a href="https://carreras.itam.mx/licenciatura-ciencia-de-datos/profesores/">Profesores</a></li>
+        <li><a href="https://carreras.itam.mx/licenciatura-ciencia-de-datos/videos/">Videos</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>DIRECCIÓN</h3>
+      <p>Río Hondo No. 1<br />Col. Progreso Tizapán C.P. 01080<br />Alc. Álvaro Obregón, Ciudad de México</p>
+    </section>
+
+    <section>
+      <h3>CONTACTO</h3>
+      <p><a href="mailto:informes@itam.mx">informes@itam.mx</a><br />55 5628 4028</p>
+    </section>
+
+    <p>
+      <a href="https://avisodeprivacidad.itam.mx/asistencia_preuniversitaria/">Aviso de privacidad</a>
+    </p>
+
+    <p>Emiliano Bobadilla — 198554</p>
+  </footer>
+</body>
+</html>
