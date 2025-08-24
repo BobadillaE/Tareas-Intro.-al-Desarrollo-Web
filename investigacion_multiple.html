@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análisis de Etiquetas y Formularios HTML</title>
+</head>
+<body>
+
+    <h1>Investigación múltiple</h1>
+
+    <hr>
+
+    <h2>Diferencias de Significado entre Etiquetas HTML</h2>
+    <p>En HTML, hay etiquetas que se ven igual en la página, pero que para el navegador y para los buscadores como Google, significan cosas diferentes. Entender esto es importante para que la página sea accesible y se posicione mejor.</p>
+
+    <h3><code>&lt;b&gt;</code> vs. <code>&lt;strong&gt;</code></h3>
+    <ul>
+        <li><strong>Cómo se ven:</strong> Ambas etiquetas ponen el texto en <b>negrita</b>.</li>
+        <li><strong>Qué significan:</strong> La etiqueta <code>&lt;b&gt;</code> solo resalta el texto visualmente para llamar la atención, pero no le da más importancia. En cambio, <code>&lt;strong&gt;</code> le dice al navegador que ese texto es muy importante.</li>
+        <li><strong>Para los buscadores:</strong> Google le presta más atención al texto dentro de <code>&lt;strong&gt;</code> porque entiende que es una parte fundamental del contenido.</li>
+    </ul>
+
+    <h3><code>&lt;i&gt;</code> vs. <code>&lt;em&gt;</code></h3>
+    <ul>
+        <li><strong>Cómo se ven:</strong> Las dos etiquetas muestran el texto en <i>cursiva</i>.</li>
+        <li><strong>Qué significan:</strong> La etiqueta <code>&lt;i&gt;</code> se usa para diferenciar un texto del resto, por ejemplo, si es una palabra en otro idioma. La etiqueta <code>&lt;em&gt;</code> se usa para dar un énfasis que cambia el significado de lo que se está diciendo.</li>
+        <li><strong>Para los buscadores:</strong> Usar <code>&lt;em&gt;</code> ayuda a que los buscadores entiendan mejor cuál es la intención o el punto clave de una frase.</li>
+    </ul>
+
+    <h3><code>&lt;s&gt;</code> vs. <code>&lt;del&gt;</code></h3>
+    <ul>
+        <li><strong>Cómo se ven:</strong> Ambas etiquetas sirven para <s>tachar el texto</s>.</li>
+        <li><strong>Qué significan:</strong> La etiqueta <code>&lt;s&gt;</code> se usa para marcar algo que ya no es correcto o que no aplica, como un precio viejo. Por otro lado, <code>&lt;del&gt;</code> se usa para mostrar que un texto fue eliminado, como en una corrección.</li>
+        <li><strong>Para los buscadores:</strong> La etiqueta <code>&lt;del&gt;</code> es más clara para los buscadores, pues les indica que hubo un cambio o una edición en el contenido de la página.</li>
+    </ul>
+
+    <hr>
+
+    <h2>Elementos de Línea y Elementos de Bloque</h2>
+
+    <h3>Elementos de Bloque</h3>
+    <p>Un elemento de bloque siempre empieza en una línea nueva y ocupa todo el ancho que tiene disponible en la página. Sirven para crear la estructura principal del contenido.</p>
+    <ul>
+        <li><code>&lt;div&gt;</code>: Un contenedor o "caja" para agrupar otros elementos.</li>
+        <li><code>&lt;p&gt;</code>: Sirve para escribir un párrafo de texto.</li>
+        <li><code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, etc.: Son los títulos y subtítulos de la página.</li>
+        <li><code>&lt;ul&gt;</code>: Crea una lista con viñetas.</li>
+        <li><code>&lt;form&gt;</code>: Define un formulario para que los usuarios introduzcan datos.</li>
+    </ul>
+
+    <h3>Elementos de Línea</h3>
+    <p>Un elemento de línea no crea un salto de línea y solo ocupa el espacio justo de su contenido. Normalmente se usan dentro de un elemento de bloque para marcar algo específico.</p>
+    <ul>
+        <li><code>&lt;span&gt;</code>: Se usa para agrupar o aplicar estilos a una pequeña parte de un texto.</li>
+        <li><code>&lt;a&gt;</code>: Crea un enlace o hipervínculo a otra página.</li>
+        <li><code>&lt;strong&gt;</code>: Marca un texto como importante.</li>
+        <li><code>&lt;img&gt;</code>: Inserta una imagen en la página.</li>
+        <li><code>&lt;input&gt;</code>: Es un campo de un formulario para que el usuario escriba algo.</li>
+    </ul>
+
+    <hr>
+
+    <h2>Campos de Formularios en HTML</h2>
+
+    <form oninput="resultado.value = parseInt(num1.value) + parseInt(num2.value)">
+        <h3>Ejemplos de Campos de Formulario</h3>
+
+        <p><strong><code>&lt;label&gt;</code> y <code>&lt;input&gt;</code>:</strong> La etiqueta <code>&lt;label&gt;</code> es el texto que describe un campo. Se conecta con el <code>&lt;input&gt;</code> usando el atributo <code>for</code>, que debe tener el mismo valor que el <code>id</code> del campo.</p>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre completo">
+        <br><br>
+
+        <h4>7 Tipos Diferentes de <code>&lt;input&gt;</code></h4>
+        
+        <label for="email">1. Email (<code>type="email"</code>):</label>
+        <input type="email" id="email" name="email" required placeholder="tu@correo.com">
+        <br><br>
+
+        <label for="password">2. Contraseña (<code>type="password"</code>):</label>
+        <input type="password" id="password" name="password" minlength="8">
+        <br><br>
+
+        <label for="fecha">3. Fecha (<code>type="date"</code>):</label>
+        <input type="date" id="fecha" name="fecha">
+        <br><br>
+        
+        <label for="color">4. Color (<code>type="color"</code>):</label>
+        <input type="color" id="color" name="color" value="#563d7c">
+        <br><br>
+        
+        <label for="rango">5. Rango (<code>type="range"</code>):</label>
+        <input type="range" id="rango" name="rango" min="0" max="100">
+        <br><br>
+        
+        <label for="archivo">6. Archivo (<code>type="file"</code>):</label>
+        <input type="file" id="archivo" name="archivo" accept="image/png, image/jpeg">
+        <br><br>
+        
+        <label for="numero">7. Número (<code>type="number"</code>):</label>
+        <input type="number" id="numero" name="numero" placeholder="Solo números">
+        <br><br>
+        
+        <p><strong><code>&lt;textarea&gt;</code>:</strong> Sirve para crear un campo de texto grande, para que el usuario pueda escribir varias líneas.</p>
+        <label for="comentario">Comentario:</label>
+        <textarea id="comentario" name="comentario" rows="4" cols="50" placeholder="Escribe tu comentario aquí..."></textarea>
+        <br><br>
+
+        <p><strong><code>&lt;select&gt;</code> y <code>&lt;option&gt;</code>:</strong> La etiqueta <code>&lt;select&gt;</code> crea una lista con opciones, y cada <code>&lt;option&gt;</code> es uno de los elementos de esa lista.</p>
+        <label for="pais">País:</label>
+        <select id="pais" name="pais">
+            <option value="">--Selecciona una opción--</option>
+            <option value="mx">México</option>
+            <option value="es">España</option>
+            <option value="ar">Argentina</option>
+        </select>
+        <br><br>
+        
+        <p><strong><code>&lt;progress&gt;</code>:</strong> Muestra una barra de progreso. El atributo <code>max</code> es el valor máximo y <code>value</code> es el valor actual.</p>
+        <label for="progreso">Progreso:</label>
+        <progress id="progreso" max="100" value="70"> 70% </progress>
+        <br><br>
+        
+        <p><strong><code>&lt;output&gt;</code>:</strong> Se usa para mostrar el resultado de alguna operación o cálculo, como una suma.</p>
+        <label>Calculadora simple:</label>
+        <input type="number" id="num1" name="num1" value="10">
+        +
+        <input type="number" id="num2" name="num2" value="10">
+        =
+        <output name="resultado" for="num1 num2">20</output>
+        <br><br>
+
+        <input type="submit" value="Enviar Formulario">
+    </form>
+
+</body>
+</html>
