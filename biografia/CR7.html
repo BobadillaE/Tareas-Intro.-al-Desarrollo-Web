@@ -1,1 +1,379 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cristiano Ronaldo: La construcción de lo imposible</title>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;700&display=swap');
+    </style>
 
+    <style>
+        body {
+            background-color: #000000;
+            color: #ffffff;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            scroll-behavior: smooth;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Bebas Neue', sans-serif;
+            color: #B69A5B;
+            letter-spacing: 1.5px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 4em;
+        }
+
+        h2 {
+            font-size: 3em;
+            margin-top: 2em;
+        }
+
+        h3 {
+            font-size: 2em;
+            color: #ffffff;
+        }
+
+        p {
+            line-height: 1.7;
+            font-size: 1.1em;
+            color: #e0e0e0;
+        }
+        
+        #main-title {
+            padding: 40px 0;
+            text-shadow: 0 0 15px rgba(182, 154, 91, 0.5);
+        }
+
+        .main-header {
+            width: 100%;
+            background-color: #0a0a0a;
+            border-bottom: 2px solid #B69A5B;
+        }
+        
+        .navbar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 15px 0;
+        }
+        
+        .nav-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 25px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .nav-link {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 1.2em;
+            font-family: 'Bebas Neue', sans-serif;
+            letter-spacing: 1px;
+            padding-bottom: 5px;
+        }
+
+        .nav-link:hover {
+            color: #B69A5B;
+            text-decoration: underline;
+        }
+        
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .narrative-article {
+            margin-bottom: 40px;
+        }
+        
+        .narrative-image {
+            display: block;
+            width: 100%;
+            max-width: 700px;
+            margin: 30px auto;
+            border-radius: 8px; 
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.7);
+            border: 3px solid #B69A5B;
+        }
+        
+        .divider {
+            border: 0;
+            height: 1px;
+            border-top: 1px dotted #444;
+            margin: 60px 0;
+        }
+
+        .palmares-list {
+            list-style-position: inside;
+            padding-left: 0;
+        }
+
+        .palmares-item {
+            background-color: #1a1a1a;
+            margin-bottom: 10px;
+            padding: 15px;
+            border-left: 4px solid #B69A5B;
+            font-size: 1.1em;
+        }
+
+        .palmares-badge {
+            font-weight: bold;
+            color: #B69A5B;
+        }
+
+        .record-list {
+            list-style: none;
+            padding-left: 0;
+            font-size: 1.2em;
+        }
+        
+        .record-item {
+            padding: 10px 0;
+            border-bottom: 1px dotted #333;
+        }
+
+        .record-item::before {
+            content: "✓";
+            color: #B69A5B;
+            font-weight: bold;
+            margin-right: 15px;
+        }
+
+        .quiz-form {
+            background-color: #121212;
+            padding: 30px;
+            border-radius: 8px;
+            border: 1px solid #333;
+        }
+        .quiz-question {
+            font-size: 1.4em;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .quiz-options div {
+            margin-bottom: 10px;
+        }
+        .quiz-options label {
+            font-size: 1.1em;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+        .submit-button {
+            display: block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            font-size: 1.1em;
+            font-family: 'Bebas Neue', sans-serif;
+            letter-spacing: 1px;
+            color: #000;
+            background-color: #B69A5B;
+            border: none;
+            cursor: pointer;
+            border-radius: 25px;
+        }
+        
+        .page-footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            background-color: #0a0a0a;
+            color: #666;
+            font-size: 0.9em;
+        }
+        
+        .footer-accent {
+            color: #B69A5B;
+            font-weight: bold;
+        }
+
+        @media (max-width: 700px) {
+            .main-area {
+                background-color: #8B0000; /* Rojo oscuro */
+            }
+            h1 { font-size: 3em; }
+            .nav-list { flex-direction: column; text-align: center; gap: 15px; }
+        }
+        @media (max-width: 400px) {
+            .hide-on-small-screen {
+                display: none;
+            }
+        }
+        @media (max-width: 300px) {
+            .main-area {
+                background-color: #B69A5B; /* Dorado */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="main-header">
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li><a href="#biografia" class="nav-link">Biografía</a></li>
+                <li><a href="#palmares" class="nav-link">Palmarés</a></li>
+                <li><a href="#records" class="nav-link">Récords</a></li>
+                <li><a href="#quiz" class="nav-link">Quiz</a></li>
+                <li><a href="https://www.youtube.com/@cristiano" target="_blank" class="nav-link">YouTube Oficial</a></li>
+                <li><a href="https://www.manutd.com/en/players-and-staff/detail/cristiano-ronaldo" target="_blank" class="nav-link">Man. United</a></li>
+                <li><a href="https://www.realmadrid.com/en-US/the-club/history/football-legends/cristiano-ronaldo-dos-santos-aveiro" target="_blank" class="nav-link">Real Madrid</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-area">
+        <div class="container">
+            <section id="biografia">
+                <h1 id="main-title">La Construcción de lo Imposible</h1>
+                <article class="narrative-article">
+                    <h2>Prólogo: El peso de un nombre</h2>
+                    <p>En la pequeña isla de Madeira, un niño de cuatro años corría descalzo tras una pelota desinflada. Era 1989 y Cristiano Ronaldo dos Santos Aveiro no sabía que su nombre, elegido por su madre en honor a Ronald Reagan, lo llevaría más lejos de lo que cualquier habitante de Santo António había soñado. Su padre, José Dinis, era alcohólico y trabajaba como jardinero municipal; su madre, Dolores, limpiaba casas y cocinaba para sostener a cuatro hijos. En esa casa humilde donde el dinero apenas alcanzaba para comer, comenzó a forjarse una voluntad que cambiaría la historia del fútbol.</p>
+                    <img src="https://i0.wp.com/www.madeiraislandnews.com/wp-content/uploads/2025/01/SmartSelect_20250105_223853_YouTube.jpg?resize=1024%2C578&ssl=1" alt="Una foto de un joven Cristiano Ronaldo comiendo, reflejando sus humildes comienzos." class="narrative-image">
+                    <p>Lo que sigue no es solo la historia de 900 goles o cinco Balones de Oro. Es el relato de cómo un niño transformó el dolor en combustible, la disciplina en religión y la excelencia en identidad. Es la crónica de un hombre que no heredó grandeza, sino que la construyó músculo por músculo, gol por gol, lágrima por lágrima.</p>
+                </article>
+                <hr class="divider">
+                <article class="narrative-article">
+                    <h3>Las lágrimas de Lisboa</h3>
+                    <p>Tenía 12 años cuando dejó todo atrás. La decisión estaba tomada: Sporting de Lisboa había visto en él algo especial. Cristiano partió solo hacia Lisboa, con las expectativas de sus padres como único equipaje. Las primeras noches en la academia fueron brutales. Sus compañeros se burlaban de su acento madeirense, lo llamaban "llorón" porque las lágrimas aparecían cada vez que perdía, incluso en los entrenamientos.</p>
+                    <p>Pero había algo diferente en esas lágrimas. No eran de debilidad; eran de rabia consigo mismo por no ser perfecto. Mientras otros dormían, él practicaba tiros libres. Mientras otros descansaban, él corría con pesas en los tobillos. A los 15 años, el destino lo puso a prueba: una taquicardia diagnosticada requería cirugía inmediata. Los médicos dijeron que tal vez no volvería a jugar. Cristiano los escuchó, asintió, y semanas después estaba de vuelta en el campo, corriendo más rápido que antes.</p>
+                    <p>Un amistoso en 2003 cambiaría todo. Sporting enfrentó al Manchester United y el joven extremo de 18 años humilló a los campeones ingleses. Los propios jugadores del United le pidieron a Sir Alex Ferguson que lo fichara. John O'Shea dijo después: "En el vuelo de regreso, todos hablábamos del mismo chico. Sabíamos que habíamos visto algo especial".</p>
+                </article>
+                <article class="narrative-article">
+                    <h3>El hijo que Ferguson nunca tuvo</h3>
+                    <p>Manchester, 2003. Sir Alex Ferguson le entregó la camiseta número 7, la misma que habían llevado George Best, Bryan Robson, Eric Cantona y David Beckham. "Sin presión", le dijo con esa sonrisa escocesa que escondía exigencia infinita. Cristiano tenía 18 años y el peso de una dinastía sobre sus hombros.</p>
+                    <p>Ferguson vio en él más que talento; vio hambre. Lo protegió de la prensa cuando fallaba, pero en privado lo destrozaba si no daba el máximo. "Eres demasiado bueno para conformarte", le repetía. Cristiano absorbía cada palabra como evangelio. Ferguson se convirtió en la figura paterna que nunca tuvo establemente. Su padre biológico había muerto en 2005 por problemas hepáticos derivados del alcoholismo, sin llegar a ver a su hijo convertirse en estrella mundial.</p>
+                    <img src="https://lncimg.lance.com.br/uploads/2021/08/27/612931a72dee7.jpeg" alt="Cristiano Ronaldo en 2008 con el Manchester United, en la cima de su poder físico y técnico." class="narrative-image">
+                    <p>La transformación fue gradual pero imparable. Del extremo regateador y a veces egoísta, emergió una máquina de hacer goles. La temporada 2007-08 fue la metamorfosis completa: 42 goles, Premier League y Champions League. En Moscú, bajo la lluvia, falló su penalti en la final contra el Chelsea, pero John Terry resbaló y el destino le dio otra oportunidad. United campeón. Ese diciembre, con 23 años, recibió su primer Balón de Oro.</p>
+                    <p>"Cristiano 2008" no era solo un jugador; era la perfecta síntesis de velocidad, potencia, técnica y definición. Podía ganar un partido de seis formas diferentes. Era, para muchos que lo vieron, la versión más completa que jamás existió de un futbolista: imparable por derecha, letal por izquierda, dominante por el centro, perfecto en el aire.</p>
+                </article>
+                <article class="narrative-article">
+                    <h3>El peso del Bernabéu</h3>
+                    <p>Madrid, 2009. Ochenta mil personas en el Bernabéu solo para verlo con la camiseta blanca por primera vez. Florentino Pérez había pagado 94 millones de euros, récord mundial. Las expectativas no eran altas; eran estratosféricas. El Real Madrid llevaba años a la sombra del Barcelona de Guardiola, ese equipo que muchos consideran el mejor de la historia.</p>
+                    <p>José Mourinho llegó en 2010 y encontró en Cristiano un alma gemela: ambos odiaban perder más de lo que amaban ganar. Mourinho entendió algo fundamental: Cristiano no necesitaba motivación, necesitaba dirección. Lo liberó de responsabilidades defensivas y lo convirtió en un misil apuntado al arco rival. "Él no es de este planeta", dijo Mourinho después de verlo marcar un hat-trick al Atlético.</p>
+                    <p>Pero la relación con Mourinho fue intensa y compleja. El portugués lo defendía públicamente pero lo exigía en privado hasta límites insospechados. En 2011, en la final de Copa del Rey contra el Barcelona, Cristiano anotó el gol de la victoria en la prórroga. Fue más que un gol; fue una declaración de guerra al imperio catalán.</p>
+                     <img src="https://imgresizer.eurosport.com/unsafe/1200x0/filters:format(jpeg)/origin-imgresizer.eurosport.com/2018/05/26/2343122-48761210-2560-1440.jpg" alt="Cristiano Ronaldo en la final de la Champions League de 2017 con el Real Madrid." class="narrative-image">
+                    <p>La rivalidad con Messi alcanzó dimensiones míticas. No era solo Madrid contra Barcelona; eran dos filosofías de vida enfrentadas. Messi, el genio natural; Cristiano, el trabajador obsesivo. Durante una década, el mundo del fútbol se dividió en dos y todos ganamos viéndolos competir. Se empujaron mutuamente a territorios inexplorados: temporadas de 60 goles, récords que parecían de videojuegos. Sin uno, el otro no hubiera llegado tan lejos.</p>
+                    <p>Los números en Madrid fueron de otro planeta: 451 goles en 438 partidos. Cuatro Champions League, incluida "La Décima" tan esperada. Se convirtió en "Mr. Champions", el hombre para las noches grandes. Su celebración, ese salto con giro y brazos abiertos, se volvió icónica. Pero más allá de los números, Cristiano en Madrid fue la prueba de que la voluntad puede vencer al talento natural cuando se lleva al extremo.</p>
+                </article>
+                <article class="narrative-article">
+                    <h3>La deuda con Portugal</h3>
+                    <p>Julio de 2016, Stade de France. Minuto 25, Cristiano cae lesionado tras un choque con Dimitri Payet. Las lágrimas mientras lo sacan en camilla parecen el final de un sueño. Portugal nunca había ganado nada importante. Antes de Cristiano, era una selección periférica que ocasionalmente producía buenos jugadores pero nunca títulos.</p>
+                    <p>Pero lo que sucedió después definió su legado tanto como cualquier gol. Desde la banda, con la rodilla vendada, se convirtió en un segundo entrenador. Gritaba, gesticulaba, abrazaba a cada jugador que se acercaba. En la prórroga, le dijo a Éder que él marcaría el gol decisivo. Minuto 109: Éder, un delantero modesto, disparó desde 30 metros. Gol. Portugal campeón de Europa.</p>
+                    <img src="https://assets.goal.com/images/v3/blt7f898de8e74cf731/708076ff93638edaa4978c27d389ff52df738e69.jpg" alt="Cristiano Ronaldo levantando el trofeo de la Eurocopa 2016 con la selección de Portugal, su mayor logro nacional." class="narrative-image hide-on-small-screen">
+                    <p>La imagen de Cristiano dirigiendo desde fuera es tan poderosa como cualquiera de sus goles. Mostró que su influencia trasciende el campo, que es un líder incluso cuando no puede jugar. Portugal, esa "selección pequeña", ganó también la Nations League en 2019. Cristiano no solo les dio títulos; les dio identidad, creencia, respeto mundial.</p>
+                    <p>Con más de 200 partidos y 130 goles, es el máximo goleador en la historia de las selecciones. Pero su mayor logro fue transformar la mentalidad de todo un país. Portugal ya no espera clasificar; espera ganar. Esa es la herencia de Cristiano: cambió el ADN futbolístico de una nación.</p>
+                </article>
+                <article class="narrative-article">
+                    <h3>La juventud eterna</h3>
+                    <p>Turín, 2018. Tenía 33 años, edad en la que la mayoría comienza el declive. Juventus pagó 100 millones por él. Muchos dijeron que era demasiado, que estaba acabado. En su presentación, cuando le preguntaron por qué eligió Juventus, respondió: "Porque me gustan los desafíos imposibles".</p>
+                    <p>Italia descubrió que Cristiano no entiende de edad biológica. Su cuerpo es un templo mantenido con disciplina monástica: entrena tres veces al día, duerme cinco siestas de 90 minutos, su dieta es calculada al gramo. A los 34 años tenía el cuerpo de alguien de 23. Los médicos de la Juventus no podían creerlo.</p>
+                    <p>Marcó hat-tricks históricos, como el de la remontada contra el Atlético en Champions. Pero más importante: demostró que el éxito no es circunstancial sino sistemático. No necesitaba el sistema del Madrid o del United; él era el sistema. Tres temporadas, 101 goles. A los 36 años seguía siendo decisivo en los momentos importantes.</p>
+                </article>
+                <article class="narrative-article">
+                    <h3>El regreso del hijo pródigo</h3>
+                    <p>Manchester, 2021. Cuando todos pensaban que iría al City, Cristiano eligió el corazón sobre el dinero. United lo necesitaba y él necesitaba cerrar el círculo. A los 36 años, en una Premier League más rápida y física que nunca, volvió a ser el máximo goleador del equipo.</p>
+                    <p>Su segundo paso por Old Trafford no fue perfecto, pero reveló algo más profundo: incluso cuando el contexto no acompaña, cuando el equipo no funciona, Cristiano encuentra la manera. Marcó goles imposibles, salvó puntos cruciales, mostró a jugadores 15 años más jóvenes qué significa ser profesional.</p>
+                    <p>La imagen de él llegando a las 6 de la mañana a entrenar, siendo el último en irse, rechazando Coca-Colas en conferencias de prensa, todo forma parte de un mensaje más grande: la excelencia no es negociable, no importa la edad, el contexto o las circunstancias.</p>
+                </article>
+                <article class="narrative-article">
+                    <h3>Más allá del césped</h3>
+                    <p>Cristiano entendió algo que pocos deportistas comprenden: es una marca global. CR7 no es solo un apodo; es un imperio. Hoteles, gimnasios, perfumes, ropa interior. Pero la inteligencia está en que todo lleva su sello de excelencia. No presta su nombre; imprime su filosofía.</p>
+                    <p>Como padre, rompió el ciclo. Cristiano Jr., los mellizos Eva y Mateo, Alana, Bella: todos crecen con algo que él nunca tuvo, un padre presente. Los lleva a entrenamientos, les enseña disciplina pero también amor. En cada celebración importante están ahí. Les da lo material, sí, pero sobre todo les da tiempo, algo que su padre nunca pudo darle.</p>
+                    <p>Con Dolores, su madre, la relación es de devoción mutua. Desde su primer sueldo importante, se aseguró de que nunca le faltara nada. Le compró una casa, la lleva a todas las galas importantes, la celebra en cada red social. Es su forma de honrar a quien lo dio todo cuando no tenían nada. Cuando ella sufrió un derrame cerebral en 2020, Cristiano alquiló un jet privado y voló inmediatamente a Madeira. "Es la mujer de mi vida", dijo.</p>
+                    <p>Su vida personal muestra otra dimensión: la gratitud no se olvida con el éxito. Georgio, su hermano mayor que luchó contra el alcoholismo, trabaja en el museo CR7. Sus hermanas manejan sus negocios en Portugal. Cristiano no olvidó de dónde vino; llevó a todos con él.</p>
+                </article>
+                <article class="narrative-article">
+                    <h3>El último baile del gladiador</h3>
+                    <p>Arabia Saudí podría parecer un retiro dorado, pero Cristiano lo ve diferente. Es embajador de un fútbol en crecimiento, mentor de jugadores jóvenes, ejemplo de que la grandeza no tiene fecha de vencimiento. A los 39 años, sigue marcando, sigue compitiendo, sigue creyendo que el próximo gol será el mejor de su carrera.</p>
+                    <p>La rivalidad con Messi evolucionó hacia el respeto mutuo. Cuando Messi ganó el Mundial, Cristiano lo felicitó públicamente. Entienden que su duelo elevó el fútbol a otra dimensión. Fueron adversarios, nunca enemigos. Juntos escribieron la década más extraordinaria en la historia del deporte.</p>
+                    <p>¿Cuándo se retirará? Nadie lo sabe, tal vez ni él mismo. Pero cuando lo haga, el fútbol perderá más que un goleador. Perderá un símbolo de que los límites son mentales, de que el talento sin trabajo es desperdicio, de que la grandeza se construye cada día en decisiones pequeñas: la comida que rechazas, la hora extra de entrenamiento, el sueño que sacrificas.</p>
+                </article>
+                <hr class="divider">
+                <article class="narrative-article">
+                    <h2>Epílogo: El legado de lo imposible</h2>
+                    <p>Cristiano Ronaldo es más que números, aunque los números son abrumadores: más de 900 goles oficiales, cinco Balones de Oro, cinco Champions League, máximo goleador histórico del fútbol. Es más que títulos, aunque los títulos hablan por sí solos. Es incluso más que fútbol.</p>
+                    <p>Es la historia de un niño de una isla perdida en el Atlántico que decidió que la pobreza no sería su destino. Es la prueba viviente de que el trabajo obsesivo puede competir con el genio natural. Es el ejemplo de que reinventarse es posible a cualquier edad, de que los límites son sugerencias para quienes eligen aceptarlos.</p>
+                    <p>Para millones de niños en favelas, barrios y pueblos olvidados, Cristiano es la prueba de que el camino existe, aunque sea estrecho y empinado. Para atletas de todas las disciplinas, es el recordatorio de que el talento te lleva lejos, pero la disciplina te hace eterno. Para cualquiera que haya sido subestimado, rechazado o considerado insuficiente, es la evidencia de que la última palabra la tienes tú.</p>
+                    <p>No sabemos cuándo colgará las botas, pero sabemos esto: cuando lo haga, el fútbol no perderá solo a un jugador. Perderá a alguien que nos enseñó que la grandeza no se hereda ni se regala. Se construye, día a día, gol a gol, con la convicción inquebrantable de que lo imposible es solo una opinión.</p>
+                    <p>En Madeira, donde todo comenzó, hay una estatua de Cristiano mirando al océano. Los niños se toman fotos con ella soñando con ser como él. Pero el verdadero monumento de Cristiano no es de bronce. Está en cada persona que decidió levantarse una vez más, entrenar una hora más, intentarlo una vez más. Porque eso es Cristiano Ronaldo: la personificación de que rendirse nunca fue opción.</p>
+                    <p>"Tu amor me hace fuerte, tu odio me hace imparable", dijo una vez. Y así vivió: convirtiendo cada crítica en combustible, cada derrota en aprendizaje, cada límite en un desafío personal. No nació siendo CR7; se construyó hasta convertirse en él. Y esa, más que cualquier trofeo, es su victoria más grande.</p>
+                </article>
+            </section>
+            
+            <hr class="divider">
+
+            <section id="palmares">
+                <h2>Palmarés</h2>
+                <h3>Títulos Individuales</h3>
+                <ol class="palmares-list">
+                    <li class="palmares-item"><span class="palmares-badge">5x</span> Balón de Oro</li>
+                    <li class="palmares-item"><span class="palmares-badge">4x</span> Bota de Oro</li>
+                    <li class="palmares-item"><span class="palmares-badge">2x</span> Premio The Best de la FIFA</li>
+                    <li class="palmares-item"><span class="palmares-badge">4x</span> Jugador del Año de la UEFA</li>
+                    <li class="palmares-item"><span class="palmares-badge">1x</span> Premio Puskás</li>
+                </ol>
+                <h3>Títulos Colectivos</h3>
+                <ul class="palmares-list">
+                    <li class="palmares-item"><span class="palmares-badge">5x</span> UEFA Champions League</li>
+                    <li class="palmares-item"><span class="palmares-badge">1x</span> Eurocopa (Portugal)</li>
+                    <li class="palmares-item"><span class="palmares-badge">1x</span> UEFA Nations League (Portugal)</li>
+                    <li class="palmares-item"><span class="palmares-badge">7x</span> Ligas Nacionales (Premier League, LaLiga, Serie A)</li>
+                </ul>
+            </section>
+            
+            <hr class="divider">
+
+            <section id="records">
+                <h2>Récords</h2>
+                <ul class="record-list">
+                    <li class="record-item">Máximo goleador en la historia del fútbol profesional.</li>
+                    <li class="record-item">Máximo goleador en la historia de la UEFA Champions League.</li>
+                    <li class="record-item">Máximo goleador en la historia del fútbol de selecciones masculinas.</li>
+                    <li class="record-item">Primer jugador en marcar en cinco Copas del Mundo diferentes.</li>
+                    <li class="record-item">Más partidos internacionales jugados por un futbolista masculino.</li>
+                </ul>
+            </section>
+            
+            <hr class="divider">
+
+            <section id="quiz">
+                <h2>Quiz Rápido</h2>
+                <form class="quiz-form">
+                    <p class="quiz-question">¿Cuántos Balones de Oro ha ganado Cristiano Ronaldo?</p>
+                    <div class="quiz-options">
+                        <div>
+                            <input type="radio" id="q1a1" name="balones" value="3">
+                            <label for="q1a1">3</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="q1a2" name="balones" value="5">
+                            <label for="q1a2">5</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="q1a3" name="balones" value="7">
+                            <label for="q1a3">7</label>
+                        </div>
+                    </div>
+                    <button type="submit" class="submit-button">Enviar Respuesta</button>
+                </form>
+            </section>
+        </div>
+    </main>
+    
+    <footer class="page-footer">
+        <p>Página de tributo a <span class="footer-accent">CR7</span>. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
